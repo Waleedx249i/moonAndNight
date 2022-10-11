@@ -1,0 +1,122 @@
+*{
+margin: 0%;
+padding: 0%;
+}
+body{
+
+background:linear-gradient(#18022d ,#000140);
+height: 100vh;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+text-decoration: none;
+color: aliceblue;
+}
+
+header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 30px;
+position: absolute;
+width: 95%;
+z-index: 100;
+
+}
+header .logo{
+font-size: 30px;
+text-transform: uppercase;
+}
+header ul{
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+}
+header ul li{
+margin-right: 30px;
+}
+
+header ul li a{
+padding: 6px 15px;
+border-radius: 20px;
+}
+header ul li a:hover,.active{
+background: white;
+color: #1a0027;
+}
+.main{
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.main::after{
+content: '';
+position: absolute;
+bottom: 0px;
+height: 150px;
+width: 100%;
+background: linear-gradient(to top,#18022d ,transparent);
+
+}
+
+.main img{
+
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit:cover;
+}
+#moon{
+    
+
+    mix-blend-mode: screen;
+    transform: translateY(80px);
+
+}
+
+#zoon{
+
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+
+transform: translateY(-100px);
+    
+}
+.content{
+color: white;
+padding: 20px;
+}
+.content h2{
+
+    margin: 20px;
+    font-size: 30px;
+
+}
+.content p{margin: 20px}
+footer{
+overflow: hidden;
+background: linear-gradient(to top,#0b0127 ,transparent);
+
+height:18vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+footer p{
+position: absolute;
+align-self: center;
+color: gray;
+
+}
