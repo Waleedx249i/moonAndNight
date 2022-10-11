@@ -18,12 +18,12 @@ window.onscroll=function() {
    boat.style.left = value*4+ 'px';
    zoon.style.fontSize = value + 'px';
 
-   if (scrollY>=100) {
+   if (scrollY>=80) {
        
    
-   zoon.style.fontSize = 100 + 'px';
+   zoon.style.fontSize = 80 + 'px';
    zoon.style.position='fixed';
-if (scrollY>=377) {
+if (scrollY>=360) {
     zoon.style.display='none';
 } else {
     
